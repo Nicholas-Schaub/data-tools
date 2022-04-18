@@ -1,0 +1,11 @@
+name: bfio-napari
+contributions:
+  commands:
+  - id: bfio-napari.get_reader
+    title: Read Bioformats compatible files
+    python_name: bfio_napari.reader:get_reader
+  readers:
+  - command: bfio-napari.get_reader
+    filename_patterns:
+      - "*"
+    accepts_directories: true
